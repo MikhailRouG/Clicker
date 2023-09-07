@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TouchInput : MonoBehaviour
 {
     private Touch theTouch;
@@ -10,7 +11,7 @@ public class TouchInput : MonoBehaviour
     {
         onClick = GetComponent<OnClick>();
     }
-    void Update()
+    private void Update()
     {
         if (Input.touchCount > 0)
         {
